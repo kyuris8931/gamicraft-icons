@@ -15,7 +15,7 @@
     "description": "Refreshing drink from the Ruby Kingdom. Cloud edition.",
     "rarity": "RARE",
     "category": "CONSUMABLE",
-    "value": 50,
+    "value": 555,
     "imageUrl": "https://picsum.photos/201",
     "imageKey": "item_ruby_potion"
   }
