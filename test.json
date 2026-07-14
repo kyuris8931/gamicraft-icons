@@ -1,0 +1,22 @@
+[
+  {
+    "id": "preset_mineral_01",
+    "name": "Magic Mineral (Cloud)",
+    "description": "A mineral infused with ancient magic. Fetched from GitHub!",
+    "rarity": "COMMON",
+    "category": "MATERIAL",
+    "value": 15,
+    "imageUrl": "https://picsum.photos/200",
+    "imageKey": "item_magic_mineral"
+  },
+  {
+    "id": "preset_potion_01",
+    "name": "Red Potion (Sponsor)",
+    "description": "Refreshing drink from the Ruby Kingdom. Cloud edition.",
+    "rarity": "RARE",
+    "category": "CONSUMABLE",
+    "value": 50,
+    "imageUrl": "https://picsum.photos/201",
+    "imageKey": "item_ruby_potion"
+  }
+]
