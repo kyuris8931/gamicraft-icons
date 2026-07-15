@@ -1,0 +1,42 @@
+[
+  {
+    "id": "template_knowledge_pack",
+    "name": "Knowledge Ecosystem",
+    "author": "Ludic Dev",
+    "description": "Unlock the power of mind. Includes Knowledge attribute, Token item, and Library facility.",
+    "version": 1,
+    "isSponsor": false,
+    "attributes": [
+      {
+        "id": "attr_knowledge",
+        "name": "Knowledge",
+        "description": "Your intellectual depth and academic progress.",
+        "imageUrl": "https://picsum.photos/202",
+        "imageKey": "attr_knowledge_icon"
+      }
+    ],
+    "items": [
+      {
+        "id": "item_knowledge_token",
+        "name": "Knowledge Token",
+        "description": "A physical representation of your learning.",
+        "rarity": "COMMON",
+        "category": "MATERIAL",
+        "value": 10,
+        "imageUrl": "https://picsum.photos/203",
+        "imageKey": "item_kb_token_icon"
+      }
+    ],
+    "facilities": [
+      {
+        "id": "fac_library",
+        "name": "Great Library",
+        "type": "GENERATOR",
+        "description": "A place where Knowledge Tokens are forged from pure wisdom.",
+        "configPayload": "{\"productionId\":\"item_knowledge_token\", \"scalingAttr\":\"attr_knowledge\"}",
+        "imageUrls": {} 
+      }
+    ],
+    "habits": []
+  }
+]
