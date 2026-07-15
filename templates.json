@@ -32,8 +32,8 @@
         "id": "fac_library",
         "name": "Great Library",
         "type": "GENERATOR",
-        "description": "A place where Knowledge Tokens are forged from pure wisdom.",
-        "configPayload": "{\"productionId\":\"item_knowledge_token\", \"scalingAttr\":\"attr_knowledge\"}",
+        "description": "Wisdom forged into tokens.",
+        "configPayload": "{\"#class\":\"generator\",\"outputItemId\":\"item_knowledge_token\",\"baseCapacity\":10,\"capacityUpgrade\":{\"upgradeType\":\"CAPACITY\",\"source\":{\"#class\":\"attribute\",\"attributeId\":\"attr_knowledge\"},\"capacityPerLevel\":10}}",
         "imageUrls": {} 
       }
     ],
