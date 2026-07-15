@@ -1,7 +1,7 @@
 [
   {
-    "id": "template_knowledge_pack_v2",
-    "name": "Knowledge Ecosystem",
+    "id": "template_knowledge_pack",
+    "name": "Knowledge Ecosystem 2",
     "author": "Ludic Dev",
     "description": "Unlock the power of mind. Includes Knowledge attribute, Token item, and Library facility.",
     "version": 1,
