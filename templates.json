@@ -33,8 +33,8 @@
         "name": "Great Library",
         "type": "GENERATOR",
         "description": "Wisdom forged into tokens.",
-        "configPayload": "{\"#class\":\"generator\",\"outputItemId\":\"item_knowledge_token\",\"baseCapacity\":10,\"capacityUpgrade\":{\"upgradeType\":\"CAPACITY\",\"source\":{\"#class\":\"attribute\",\"attributeId\":\"attr_knowledge\"},\"capacityPerLevel\":10}}",
-        "imageUrls": {} 
+        "configPayload": "{\"#class\":\"generator\",\"outputItemId\":\"item_knowledge_token\",\"baseCapacity\":10,\"capacityUpgrade\":{\"upgradeType\":\"CAPACITY\",\"source\":{\"#class\":\"attribute\",\"attributeId\":\"attr_knowledge\"},\"effectMultiplier\":1.0,\"capacityPerLevel\":10}}",
+        "imageUrls": {}
       }
     ],
     "habits": []
