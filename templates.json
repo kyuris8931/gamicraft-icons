@@ -1,37 +1,39 @@
-{
-  "name": "Knowledge Pack",
-  "content": {
-    "attributes": [
-      {
-        "name": "Knowledge",
-        "imageUrl": "https://picsum.photos/202"
-      }
-    ],
-    "items": [
-      {
-        "name": "Knowledge Token",
-        "imageUrl": "https://picsum.photos/203"
-      }
-    ],
-    "facilities": [
-      {
-        "name": "Library",
-        "config": {
-          "outputItemId": "item_knowledge_token",
-          "capacityUpgrade": {
-            "source": {
-              "type": "attribute",
-              "attributeId": "attr_knowledge"
-            }
-          },
-          "productionUpgrade": {
-            "source": {
-              "type": "attribute",
-              "attributeId": "attr_knowledge"
+[
+  {
+    "name": "Knowledge Pack",
+    "content": {
+      "attributes": [
+        {
+          "name": "Knowledge",
+          "imageUrl": "https://picsum.photos/202"
+        }
+      ],
+      "items": [
+        {
+          "name": "Knowledge Token",
+          "imageUrl": "https://picsum.photos/203"
+        }
+      ],
+      "facilities": [
+        {
+          "name": "Library",
+          "config": {
+            "outputItemId": "item_knowledge_token",
+            "capacityUpgrade": {
+              "source": {
+                "type": "attribute",
+                "attributeId": "attr_knowledge"
+              }
+            },
+            "productionUpgrade": {
+              "source": {
+                "type": "attribute",
+                "attributeId": "attr_knowledge"
+              }
             }
           }
         }
-      }
-    ]
+      ]
+    }
   }
-}
+]
