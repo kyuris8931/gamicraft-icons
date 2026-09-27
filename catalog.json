@@ -15,22 +15,6 @@
       "authorNotes": "Item bahan dasar untuk crafting peralatan sihir.",
       "tags": ["crafting", "material", "starter"],
       "version": "1.0"
-    },
-    {
-      "id": "preset_potion_01",
-      "name": "Red Potion (Sponsor)",
-      "description": "Refreshing drink from the Ruby Kingdom. Cloud edition.",
-      "rarity": "RARE",
-      "category": "CONSUMABLE",
-      "type": "GRATIFICATION",
-      "value": 555,
-      "imageUrl": "https://picsum.photos/201",
-      "imageKey": "item_ruby_potion",
-      "author": "RubyKingdom",
-      "createdAt": "2026-09-28",
-      "authorNotes": "Ramuan pemulih HP instan buatan Kerajaan Ruby.",
-      "tags": ["potion", "consumable", "rare"],
-      "version": "1.0"
     }
   ],
 
