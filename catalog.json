@@ -1,0 +1,163 @@
+{
+  "items": [
+    {
+      "id": "preset_mineral_01",
+      "name": "Magic Mineral (Cloud)",
+      "description": "A mineral infused with ancient magic. Fetched from GitHub!",
+      "rarity": "COMMON",
+      "category": "MATERIAL",
+      "type": "GRATIFICATION",
+      "value": 15,
+      "imageUrl": "https://picsum.photos/200",
+      "imageKey": "item_magic_mineral",
+      "author": "Kyuris8931",
+      "createdAt": "2026-09-28",
+      "authorNotes": "Item bahan dasar untuk crafting peralatan sihir.",
+      "tags": ["crafting", "material", "starter"],
+      "version": "1.0"
+    },
+    {
+      "id": "preset_potion_01",
+      "name": "Red Potion (Sponsor)",
+      "description": "Refreshing drink from the Ruby Kingdom. Cloud edition.",
+      "rarity": "RARE",
+      "category": "CONSUMABLE",
+      "type": "GRATIFICATION",
+      "value": 555,
+      "imageUrl": "https://picsum.photos/201",
+      "imageKey": "item_ruby_potion",
+      "author": "RubyKingdom",
+      "createdAt": "2026-09-28",
+      "authorNotes": "Ramuan pemulih HP instan buatan Kerajaan Ruby.",
+      "tags": ["potion", "consumable", "rare"],
+      "version": "1.0"
+    }
+  ],
+
+  "skills": [
+    {
+      "id": "skill_poison_blade",
+      "name": "Poison Blade",
+      "description": "Menyerang musuh dan mengaplikasikan efek racun.",
+      "type": "NORMAL_SKILL",
+      "spCost": 2,
+      "imageUrl": "https://picsum.photos/204",
+      "imageKey": "skill_poison_blade",
+      "author": "Kyuris8931",
+      "createdAt": "2026-09-28",
+      "authorNotes": "Skill racun klasik. Sangat efektif untuk musuh ber-HP tebal.",
+      "tags": ["debuff", "poison", "physical"],
+      "version": "1.0",
+      "signatureStatuses": [
+        {
+          "id": "status_poison_debuff",
+          "name": "Poison",
+          "description": "Menerima damage di akhir giliran.",
+          "category": "DEBUFF",
+          "imageUrl": "https://picsum.photos/205",
+          "imageKey": "ic_status_poison",
+          "trigger": "ON_TURN_END",
+          "traits": [
+            {
+              "trait": "DOT",
+              "value": 0.2
+            }
+          ]
+        }
+      ],
+      "skillLogic": {
+        "targeting": {
+          "selection": { "rangeValue": 1, "validTarget": "ENEMY" },
+          "impact": { "shape": "SINGLE" }
+        },
+        "pipeline": [
+          {
+            "type": "Status",
+            "statusId": "status_poison_debuff",
+            "category": "DEBUFF",
+            "duration": 3
+          }
+        ]
+      }
+    }
+  ],
+
+  "statuses": [
+    {
+      "id": "status_stun",
+      "name": "Stun",
+      "description": "Unit terparalisis dan tidak dapat bertindak.",
+      "category": "DEBUFF",
+      "defaultDuration": 2,
+      "imageUrl": "https://picsum.photos/206",
+      "imageKey": "ic_status_stun",
+      "author": "System",
+      "createdAt": "2026-09-28",
+      "authorNotes": "Primitive status effect untuk paralisis.",
+      "tags": ["debuff", "stun", "crowd-control"],
+      "version": "1.0",
+      "traits": [
+        {
+          "trait": "STUN",
+          "value": 1.0
+        }
+      ]
+    }
+  ],
+
+  "heroes": [
+    {
+      "id": "hero_elven_ranger",
+      "name": "Elven Ranger",
+      "rarity": "SR",
+      "role": "HERO",
+      "author": "Kyuris8931",
+      "createdAt": "2026-09-28",
+      "authorNotes": "Hero pemanah jarak jauh dengan fleksibilitas tinggi.",
+      "tags": ["archer", "ranger", "sr"],
+      "version": "1.0",
+      "imageUrls": {
+        "portrait": "https://picsum.photos/207"
+      },
+      "imageKeys": {
+        "portrait": "hero_portrait_elven_ranger"
+      },
+      "baseStats": {
+        "maxHp": 120,
+        "attackPower": 25,
+        "defense": 8,
+        "maxGauge": 100
+      },
+      "skills": []
+    }
+  ],
+
+  "templates": [
+    {
+      "id": "tpl_starter_pack",
+      "name": "Starter Adventure Pack",
+      "description": "Paket petualang pemula berisi item, atribut, dan fasilitas awal.",
+      "author": "Kyuris8931",
+      "content": {
+        "attributes": [
+          {
+            "name": "Knowledge",
+            "imageUrl": "https://picsum.photos/202"
+          }
+        ],
+        "items": [
+          {
+            "name": "Knowledge Token",
+            "imageUrl": "https://picsum.photos/203"
+          }
+        ],
+        "facilities": [
+          {
+            "name": "Library",
+            "type": "generator"
+          }
+        ]
+      }
+    }
+  ]
+}
