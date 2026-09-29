@@ -25,7 +25,7 @@
     "name": "Divine Resurrection",
     "description": "Membangkitkan 1 rekan tim yang gugur dengan 50% HP dan menghapus seluruh status buruk.",
     "type": "NORMAL_SKILL",
-    "imageUrl": https://raw.githubusercontent.com/kyuris8931/gamicraft-icons/refs/heads/main/game_icon_assets/junimo_nectar.png,
+    "imageUrl": "https://raw.githubusercontent.com/kyuris8931/gamicraft-icons/refs/heads/main/game_icon_assets/junimo_nectar.png",
     "imageKey": "skill_icon_revive",
     "spCost": 5,
     "author": "Ludic Dev",
