@@ -20,50 +20,54 @@
 
   "skills": [
     {
-      "id": "skill_poison_blade",
-      "name": "Poison Blade",
-      "description": "Menyerang musuh dan mengaplikasikan efek racun.",
-      "type": "NORMAL_SKILL",
-      "spCost": 2,
-      "imageUrl": "https://picsum.photos/204",
-      "imageKey": "skill_poison_blade",
-      "author": "Kyuris8931",
-      "createdAt": "2026-09-28",
-      "authorNotes": "Skill racun klasik. Sangat efektif untuk musuh ber-HP tebal.",
-      "tags": ["debuff", "poison", "physical"],
-      "version": "1.0",
-      "signatureStatuses": [
+    "id": "skill_divine_resurrection",
+    "key": "divine_resurrection",
+    "name": "Divine Resurrection",
+    "description": "Membangkitkan 1 rekan tim yang gugur dengan 50% HP dan menghapus seluruh status buruk.",
+    "type": "NORMAL_SKILL",
+    "imageUrl": https://raw.githubusercontent.com/kyuris8931/gamicraft-icons/refs/heads/main/game_icon_assets/junimo_nectar.png,
+    "imageKey": "skill_icon_revive",
+    "spCost": 5,
+    "author": "Ludic Dev",
+    "authorNotes": "Skill Revive target manual untuk membangkitkan kawan yang telah gugur.",
+    "tags": ["revive", "support", "divine", "heal"],
+    "version": "1.0.0",
+    "skillLogic": {
+      "spCost": 5,
+      "gaugeCost": 0,
+      "anchor": "CASTER",
+      "targeting": {
+        "selection": {
+          "rangeType": "GLOBAL",
+          "rangeValue": 1,
+          "scope": "WITHIN",
+          "validTarget": "DEAD_ALLY",
+          "targetState": "DEAD",
+          "direction": "ALL"
+        },
+        "impact": {
+          "shape": "SINGLE",
+          "size": 0
+        }
+      },
+      "pipeline": [
         {
-          "id": "status_poison_debuff",
-          "name": "Poison",
-          "description": "Menerima damage di akhir giliran.",
-          "category": "DEBUFF",
-          "imageUrl": "https://picsum.photos/205",
-          "imageKey": "ic_status_poison",
-          "trigger": "ON_TURN_END",
-          "traits": [
-            {
-              "trait": "DOT",
-              "value": 0.2
-            }
-          ]
+          "#class": "Instant",
+          "type": "REVIVE",
+          "multiplier": 0.5,
+          "params": {},
+          "subject": {
+            "#class": "PrimaryTarget"
+          },
+          "filter": "ALL",
+          "conditions": []
         }
       ],
-      "skillLogic": {
-        "targeting": {
-          "selection": { "rangeValue": 1, "validTarget": "ENEMY" },
-          "impact": { "shape": "SINGLE" }
-        },
-        "pipeline": [
-          {
-            "type": "Status",
-            "statusId": "status_poison_debuff",
-            "category": "DEBUFF",
-            "duration": 3
-          }
-        ]
-      }
-    }
+      "signatureStatuses": [],
+      "descriptionConditions": []
+    },
+    "signatureStatuses": []
+  }
   ],
 
   "statuses": [
